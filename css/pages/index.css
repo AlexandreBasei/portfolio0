@@ -48,6 +48,7 @@ main h2 {
   width: 100%;
   font-weight: 900;
   color: #813A32;
+  font-size: 36px;
 }
 main h3 {
   font-family: "Roboto", sans-serif;
@@ -58,15 +59,43 @@ main h3 {
   font-size: 1.3rem;
   margin-top: -6%;
 }
+main article h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+main article p {
+  margin-top: 0;
+  padding: 0 20vw 0 25vw;
+  position: relative;
+}
+main article #filet {
+  width: 7px;
+  left: 20vw;
+  position: absolute;
+  background-color: #D32E4C;
+  transform: translateY(-54px);
+  z-index: 50;
+}
+main article #visite {
+  padding: 3vh 20vw 0 25vw;
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 main section {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
+main section a {
+  color: rgb(83, 83, 83);
+}
 main section form {
   width: 60vw;
   padding: 10% 12%;
+  margin: 4vh 0 5vh 0;
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

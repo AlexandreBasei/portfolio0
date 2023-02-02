@@ -26,43 +26,45 @@
     <main>
 
         <section id="title-container">
-        <h1 id="portfolio">Portfolio</h1>
+            <h1 id="portfolio">Portfolio</h1>
             <h1>Alexandre<br>Basei</h1>
-            
         </section>
 
-        <h2>Bienvenue !</h2><br>
-        <p>
-            Bonjour ! Je m’appelle Alexandre Basei, j’ai 19 ans et je vis à Paris. Attiré depuis toujours par la création de sites web et par l’audiovisuel, j’ai décidé de suivre une formation sur les Métiers du Multimédia et de l’Internet (MMI) à l’IUT de Vélizy. J’étudie la création de sites web, de leur conception à leur développement, le graphisme, la communication, l’audiovisuel et la création d’environnements interactifs. <br><br>
+        <article>
+            <h2>Bienvenue !</h2><br>
+            <div id="filet"></div>
+            <p id="pres">
+                Bonjour ! Je m’appelle Alexandre Basei, j’ai 19 ans et je vis à Paris. Attiré depuis toujours par la création de sites web et par l’audiovisuel, j’ai décidé de suivre une formation sur les Métiers du Multimédia et de l’Internet (MMI) à l’IUT de Vélizy. J’étudie la création de sites web, de leur conception à leur développement, le graphisme, la communication, l’audiovisuel et la création d’environnements interactifs. <br><br>
 
-            J’ai aussi décidé de réaliser ce BUT car la formation est pluridisciplinaire, ce qui me permet d’étudier de nombreux domaines et d’être polyvalent. J’ai déjà beaucoup appris depuis le début de la formation, que ce soit au niveau de la maîtrise logicielle ( Photoshop, InDesign, After Effects, Unity…) ou de la maîtrise de langages web comme le HTML, le CSS, le PHP et le JavaScript. Je sais aussi utiliser certains frameworks comme Angular.js, Vue.js ou Symfony. Enfin, j’ai une bonne maîtrise des langages de programmation que le Java ou le C#. <br><br>
+                J’ai aussi décidé de réaliser ce BUT car la formation est pluridisciplinaire, ce qui me permet d’étudier de nombreux domaines et d’être polyvalent. J’ai déjà beaucoup appris depuis le début de la formation, que ce soit au niveau de la maîtrise logicielle ( Photoshop, InDesign, After Effects, Unity…) ou de la maîtrise de langages web comme le HTML, le CSS, le PHP et le JavaScript. Je sais aussi utiliser certains frameworks comme Angular.js, Vue.js ou Symfony. Enfin, j’ai une bonne maîtrise des langages de programmation que le Java ou le C#. <br><br>
 
-            J’ai déjà réalisé plusieurs projets, comme la conception d’une marque, de nombreux sites web ou la réalisation de deux documentaires. Sur la page Mes Réalisations, vous pourrez avoir un aperçu plus détaillé de mes projets.
-        </p>
-        <h3>Bonne visite !</span>
+                J’ai déjà réalisé plusieurs projets, comme la conception d’une marque, de nombreux sites web ou la réalisation de deux documentaires. Sur la page Mes Réalisations, vous pourrez avoir un aperçu plus détaillé de mes projets.
+            </p>
+            <h3 id="visite">Bonne visite !</h3>
+        </article>
 
-            <h2>ME CONTACTER</h2>
+        <h2>ME CONTACTER</h2>
 
-            <section>
-                <h3>Mail</h3>
-                <span>alexandreacevedobasei@gmail.com</span>
+        <section>
+            <h3>Mail</h3>
+            <span>alexandreacevedobasei@gmail.com</span><br><br>
 
-                <h3>Téléphone</h3>
-                <span>06 46 88 46 88</span>
+            <h3>Téléphone</h3>
+            <span>06 46 88 46 88</span><br><br>
 
-                <h3>Linkedin</h3>
-                <a href="https://www.linkedin.com/in/alexandre-basei" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandre-basei</a>
+            <h3>Linkedin</h3>
+            <a href="https://www.linkedin.com/in/alexandre-basei" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandre-basei</a>
 
-                <form method="post">
-                    <label for="source">Votre mail :</label>
-                    <input type="text" name="source">
-                    <label for="obj">Objet</label>
-                    <input type="text" name="obj">
-                    <label for="msg">Message</label>
-                    <textarea name="msg" cols="30" rows="10"></textarea>
-                    <input type="submit" id="envoi" value="Envoyer">
-                </form>
-            </section>
+            <form method="post">
+                <label for="source">Votre e-mail :</label>
+                <input type="text" name="source"><br>
+                <label for="obj">Objet :</label><br>
+                <input type="text" name="obj">
+                <label for="msg">Message :</label>
+                <textarea name="msg" cols="30" rows="10"></textarea>
+                <input type="submit" id="envoi" value="Envoyer">
+            </form>
+        </section>
 
 
 
