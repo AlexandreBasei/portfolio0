@@ -1,0 +1,105 @@
+@import url('../main.css');
+
+@mixin Titres {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+$h2: #813A32;
+$h3: #D32E4C;
+
+main {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    #title-container {
+        background-image: linear-gradient(to right bottom, #D32E4C 0%, #813A32 100%);
+        width: 100%;
+        height: 100vh;
+        flex-flow: wrap column-reverse;
+
+        h1 {
+            @include Titres();
+            text-align: left;
+            font-weight: 900;
+            font-size: 38px;
+            padding-left: 20vw;
+            z-index: 1;
+            margin: 0;
+            width: fit-content;
+            height: fit-content;
+            color: rgb(255, 255, 255);
+        }
+
+        #portfolio {
+            font-size: 80px;
+            writing-mode: vertical-rl;
+            position: absolute;
+            padding: 0 10vw 0 0;
+            left: 0;
+            width: fit-content;
+            background-image: none;
+            transform: scaleX(-1) rotateX(180deg);
+            z-index: 0;
+        }
+    }
+
+    h2 {
+        @include Titres();
+        font-weight: 900;
+        color: $h2;
+    }
+
+    h3 {
+        @include Titres();
+        font-weight: 700;
+        color: $h3;
+        font-size: 1.3rem;
+        margin-top: -6%;
+    }
+
+    section {
+
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            width: 60vw;
+            padding: 10% 12%;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            input {
+                margin: 5% 0;
+                border-radius: 5px;
+                border: 1px solid black;
+                padding: 3%;
+                border: none;
+            }
+
+            textarea {
+                box-sizing: border-box;
+                resize: none;
+                line-height: 10px;
+                border: none;
+                border-radius: 10px;
+                margin: 5% 0;
+            }
+
+            #envoi {
+                margin: 0;
+                border: none;
+                border-radius: 10px;
+                background-color: rgb(157, 196, 238);
+                font-weight: bold;
+                padding: 5% 10%;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@import url('./fonts.css');
+
+.caché {
+    opacity: 0;
+    pointer-events: none;
+}
+
+html {
+    font-family: "Textes";
+    margin: 0;
+    padding: 0;
+    color: rgb(83, 83, 83);
+    background-color: rgb(244, 244, 244);
+    width: 100vw;
+
+    body{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+    * {
+        transition: opacity 0.2s ease;
+    }
+}
+
+header {
+    #burger {
+        position: fixed;
+        right: 2%;
+        top: 2%;
+        padding: 0.5%;
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+        z-index: 10;
+
+        div {
+            width: 30px;
+            height: 5px;
+            background-color: rgb(255, 255, 255);
+            margin: 4px;
+            border-radius: 50px;
+        }
+    }
+
+    #burger2 {
+        position: fixed;
+        font-size: 2rem;
+        right: 1.98%;
+        background-color: transparent;
+        top: 1%;
+        color: rgba(255, 255, 255, 0.8);
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        border: none;
+        z-index: 13;
+    }
+
+    #burger2:hover {
+        color: rgb(155, 155, 155);
+    }
+
+    nav::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        background: rgb(46, 46, 46);
+        transition: all 0.5s ease-in-out;
+        clip-path: circle(0px at 94% 3%);
+        visibility: hidden;
+        z-index: 10;
+    }
+
+    .active::before{
+        visibility: visible;
+        clip-path: circle(100%);
+    }
+
+    nav{
+        pointer-events: none;
+        position: fixed;
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        gap: 10%;
+        height: 100vh;
+        z-index: 11;
+
+        a{
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.8rem;
+            opacity: 0;
+            z-index: 12;
+            position: relative;
+            text-decoration: none;
+            width: 100vw;
+            text-align: center;
+            transition: opacity 0.8s;
+        }
+    }
+
+    .active{
+        pointer-events: all;
+        a{
+            opacity: 1;
+        }
+    }
+}
+
+main{
+
+    h1{
+        text-align: center;
+        margin: 0;
+        padding-top: 10%;
+    }
+
+    p{
+        padding: 2% 12%;
+    }
+}
