@@ -1,6 +1,6 @@
 @import url("../main.css");
 main {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
@@ -11,13 +11,13 @@ main #title-container {
   flex-flow: wrap column-reverse;
 }
 main #title-container h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   width: 100%;
   text-align: left;
   font-weight: 900;
   font-size: 38px;
-  padding-left: 20vw;
+  padding-left: 25vw;
   z-index: 1;
   margin: 0;
   width: -webkit-fit-content;
@@ -33,7 +33,7 @@ main #title-container #portfolio {
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
   position: absolute;
-  padding: 0 10vw 0 0;
+  padding: 0 6vw 0 0;
   left: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -43,7 +43,7 @@ main #title-container #portfolio {
   z-index: 0;
 }
 main h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   width: 100%;
   font-weight: 900;
@@ -51,7 +51,7 @@ main h2 {
   font-size: 36px;
 }
 main h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   width: 100%;
   font-weight: 700;

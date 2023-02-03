@@ -1,7 +1,8 @@
 @import url('../main.css');
 
 @mixin Titres {
-    font-family: "Roboto", sans-serif;
+    // font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     width: 100%;
 }
@@ -11,7 +12,8 @@ $h3: #D32E4C;
 
 main {
 
-    font-family: "Roboto", sans-serif;
+    // font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
 
@@ -26,7 +28,7 @@ main {
             text-align: left;
             font-weight: 900;
             font-size: 38px;
-            padding-left: 20vw;
+            padding-left: 25vw;
             z-index: 1;
             margin: 0;
             width: fit-content;
@@ -38,7 +40,7 @@ main {
             font-size: 80px;
             writing-mode: vertical-rl;
             position: absolute;
-            padding: 0 10vw 0 0;
+            padding: 0 6vw 0 0;
             left: 0;
             width: fit-content;
             background-image: none;
