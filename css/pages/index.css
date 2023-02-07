@@ -59,6 +59,9 @@ main h3 {
   font-size: 1.3rem;
   margin-top: -6%;
 }
+main article {
+  position: relative;
+}
 main article h2 {
   padding-bottom: 0;
   margin-bottom: 0;
@@ -68,12 +71,13 @@ main article p {
   padding: 0 20vw 0 25vw;
   position: relative;
 }
-main article #filet {
+main article p::before {
+  content: "";
   width: 7px;
-  left: 20vw;
   position: absolute;
+  height: 100%;
   background-color: #D32E4C;
-  transform: translateY(-54px);
+  transform: translateX(-20px);
   z-index: 50;
 }
 main article #visite {
@@ -122,4 +126,12 @@ main section form #envoi {
   font-weight: bold;
   padding: 5% 10%;
   text-transform: uppercase;
+}
+
+.myform input.ng-invalid.ng-dirty, .myform textarea.ng-invalid.ng-dirty {
+  background-color: #FA787E;
+}
+
+.myform input.ng-valid.ng-dirty, .myform textarea.ng-valid.ng-dirty {
+  background-color: #78FA89;
 }/*# sourceMappingURL=index.css.map */

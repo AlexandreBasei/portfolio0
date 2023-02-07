@@ -64,30 +64,31 @@ main {
         margin-top: -6%;
     }
 
-    article{
+    article {
+        position: relative;
 
-        h2{
+        h2 {
             padding-bottom: 0;
             margin-bottom: 0;
         }
 
-        p{
+        p {
             margin-top: 0;
             padding: 0 20vw 0 25vw;
             position: relative;
         }
 
-        #filet{
+        p::before {
+            content: '';
             width: 7px;
-            left: 20vw;
             position: absolute;
-            // height: 920px;
+            height: 100%;
             background-color: $h3;
-            transform: translateY(-54px);
+            transform: translateX(-20px);
             z-index: 50;
         }
 
-        #visite{
+        #visite {
             padding: 3vh 20vw 0 25vw;
             text-align: left;
             width: fit-content;
@@ -101,8 +102,9 @@ main {
         justify-content: center;
         align-items: center;
 
-        a{
-            color: rgb(83, 83, 83);;
+        a {
+            color: rgb(83, 83, 83);
+            ;
         }
 
         form {
@@ -140,4 +142,12 @@ main {
             }
         }
     }
+}
+
+.myform input.ng-invalid.ng-dirty, .myform textarea.ng-invalid.ng-dirty {
+    background-color: #FA787E;
+}
+
+.myform input.ng-valid.ng-dirty, .myform textarea.ng-valid.ng-dirty {
+    background-color: #78FA89;
 }
