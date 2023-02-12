@@ -2,55 +2,80 @@ document.addEventListener('DOMContentLoaded', function () {
 
     'use strict';
 
-    let defil = window.scrollY;
-    let ham1 = document.querySelector("#ham1");
-    let ham2 = document.querySelector("#ham2");
-    let ham3 = document.querySelector("#ham3");
+    let burger = document.getElementById('burger');
+    let croix = document.getElementById('burger2');
+    let carL = document.getElementById("carouselL");
+    let carR = document.getElementById("carouselR");
+    let proj = 1;
+    let nav = document.querySelector("header nav");
+    let fond = document.getElementById("title-container");
 
-    window.addEventListener('scroll', function() {
-        defil = window.scrollY;
-        console.log(defil);
+    burger.addEventListener("click", () => {
+        document.querySelector('html').style.overflowY = "hidden";
+    });
 
-        if (defil >= 630) {
-            ham3.style.backgroundColor = 'black';
-        }
-        if (defil >= 642) {
-            ham2.style.backgroundColor = 'black';
-        }
-        if (defil >= 649) {
-            ham1.style.backgroundColor = 'black';
-        }
-        if (defil <= 629) {
-            ham3.style.backgroundColor = 'white';
-        }
-        if (defil <= 634) {
-            ham2.style.backgroundColor = 'white';
-        }
-        if (defil <= 643) {
-            ham1.style.backgroundColor = 'white';
-        }
+    croix.addEventListener("click", () => {
+        document.querySelector('html').style.overflowY = "auto";
+    });
 
-        switch (defil) {
-            case 630:
-                ham3.style.backgroundColor = 'black';
-                console.log(defil);
-            case 642:
-                ham2.style.backgroundColor = 'black';
-                console.log(defil);
-            case 649:
-                ham1.style.backgroundColor = 'black';
-                console.log(defil);
-            case 630:
-                ham3.style.backgroundColor = 'white';
-                console.log(defil);
-            case 632:
-                ham2.style.backgroundColor = 'white';
-                console.log(defil);
-            case 641:
-                ham1.style.backgroundColor = 'white';
-                console.log(defil);
+    window.addEventListener('scroll', function () {
+
+        if (isOverlapping(nav, fond)) {
+            burger.children[0].style.backgroundColor = "white";
+            burger.children[1].style.backgroundColor = "white";
+            burger.children[2].style.backgroundColor = "white";
+            nav.children[0].style.color = "white";
+            nav.children[1].style.color = "white";
+    
+        } else {
+            burger.children[0].style.backgroundColor = "black";
+            burger.children[1].style.backgroundColor = "black";
+            burger.children[2].style.backgroundColor = "black";
+            nav.children[0].style.color = "black";
+            nav.children[1].style.color = "black";
+        }
+    });
+    
+    carL.addEventListener("click", () => {
+
+        switch (proj) {
+            case 2:
+                addClass('p2', 'droite');
+                rmClass('p2', 'centre');
+                addClass('p1', 'centre');
+                rmClass('p1', 'gauche');
+                proj = 1;
+                break;
+            case 3:
+                addClass('p3', 'droite');
+                rmClass('p3', 'centre');
+                addClass('p2', 'centre');
+                rmClass('p2', 'gauche');
+                proj = 2;
+
             default:
-                
+                break;
         }
-    })
+    });
+
+    carR.addEventListener("click", () => {
+
+        switch (proj) {
+            case 1:
+                addClass('p1', 'gauche');
+                rmClass('p1', 'centre');
+                addClass('p2', 'centre');
+                rmClass('p2', 'droite');
+                proj = 2;
+                break;
+            case 2:
+                addClass('p2', 'gauche');
+                rmClass('p2', 'centre');
+                addClass('p3', 'centre');
+                rmClass('p3', 'droite');
+                proj = 3;
+            default:
+                break;
+        }
+    });
 });

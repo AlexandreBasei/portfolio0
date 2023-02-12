@@ -1,16 +1,15 @@
 <?php
 
 if (isset($_POST["msg"])) {
-    
-    $to = $_POST["alexandreacevedobasei@gmail.com"];
+
+    $to = "alexandreacevedobasei@gmail.com";
     $subject = $_POST["obj"];
     $message = $_POST["msg"];
-    $headers = "From: ".$_POST["source"]."r\n";
+    $headers = "From: " . $_POST["source"] . "r\n";
 
     if (mail($to, $subject, $message, $headers)) {
         echo "Email sent successfully.";
-    } 
-    else {
+    } else {
         echo "Failed to send email.";
     }
 }
@@ -19,7 +18,7 @@ if (isset($_POST["msg"])) {
 
 
 <!DOCTYPE html>
-<html lang="fr" ng-app='InputValidation'>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -27,8 +26,6 @@ if (isset($_POST["msg"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/index.css">
     <title>Alexandre Basei - Portfolio</title>
-    <script src="./js/lib/angular.min.js"></script>
-    <script src="./js/controllers/inputvalidation.js"></script>
 </head>
 
 <body>
@@ -52,6 +49,66 @@ if (isset($_POST["msg"])) {
             <h1>Alexandre<br>Basei</h1>
         </section>
 
+        <section>
+            <h2 id="real">Réalisations</h2>
+
+            <div class="projet centre" id="p1">
+                <h3>Leclerc Noël</h3>
+                <p>Ce projet avait pour objectif de réaliser un site web avec l’expérience utilisateur la plus qualitative possible ayant pour thème Noël et la chaîne de magasins Leclerc. Le site web s’adresse aux enfants de 5 à 10 ans.<br><br>
+
+                    Je faisais partie d’une équipe de 8 membres, dont 5 graphistes et 3 développeurs. J’ai développé la grotte gelée, l’igloo de la photo, le sapin de Noël et le palais de la gourmandise. <br><br>
+
+                    Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en équipe.
+                </p>
+                <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target" colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
+                    </lord-icon>VISITER
+                </a>
+            </div>
+
+            <div class="projet droite" id="p2">
+                <h3>Leclerc Noël</h3>
+                <p>Ce projet avait pour objectif de réaliser un site web avec l’expérience utilisateur la plus qualitative possible ayant pour thème Noël et la chaîne de magasins Leclerc. Le site web s’adresse aux enfants de 5 à 10 ans.<br><br>
+
+                    Je faisais partie d’une équipe de 8 membres, dont 5 graphistes et 3 développeurs. J’ai développé la grotte gelée, l’igloo de la photo, le sapin de Noël et le palais de la gourmandise. <br><br>
+
+                    Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en équipe.
+                </p>
+                <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target" colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
+                    </lord-icon>VISITER
+                </a>
+            </div>
+
+            <div class="projet droite" id="p3">
+                <h3>Leclerc Noël</h3>
+                <p>Ce projet avait pour objectif de réaliser un site web avec l’expérience utilisateur la plus qualitative possible ayant pour thème Noël et la chaîne de magasins Leclerc. Le site web s’adresse aux enfants de 5 à 10 ans.<br><br>
+
+                    Je faisais partie d’une équipe de 8 membres, dont 5 graphistes et 3 développeurs. J’ai développé la grotte gelée, l’igloo de la photo, le sapin de Noël et le palais de la gourmandise. <br><br>
+
+                    Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en équipe.
+                </p>
+                <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target" colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
+                    </lord-icon>VISITER
+                </a>
+            </div>
+
+            <div id="carou">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="carouselL" src="https://cdn.lordicon.com/xsdtfyne.json" trigger="click" colors="primary:#121331" state="hover-2">
+                </lord-icon>
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="carouselR" src="https://cdn.lordicon.com/xsdtfyne.json" trigger="click" colors="primary:#121331" state="hover-2">
+                </lord-icon>
+            </div>
+
+            <a href="./real.htm" target="_self" rel="noopener noreferrer" class="cta">Découvrir mes autres projets</a>
+        </section>
+
         <article>
             <h2>Bienvenue !</h2><br>
             <p>
@@ -66,7 +123,7 @@ if (isset($_POST["msg"])) {
 
         <h2>ME CONTACTER</h2>
 
-        <section ng-controller='Form'>
+        <section>
             <h3>Mail</h3>
             <span>alexandreacevedobasei@gmail.com</span><br><br>
 
@@ -76,17 +133,17 @@ if (isset($_POST["msg"])) {
             <h3>Linkedin</h3>
             <a href="https://www.linkedin.com/in/alexandre-basei" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandre-basei</a>
 
-            <form method="post" ng-submit="submitForm(Form.$valid)" novalidate class="myform">
+            <form method="post">
                 <label for="source">Votre e-mail :</label>
-                <input type="mail" name="source" ng-model='source' required><br>
+                <input type="mail" name="source" required><br>
 
                 <label for="obj">Objet :</label><br>
-                <input type="text" name="obj" ng-model='obj' required>
+                <input type="text" name="obj" required>
 
                 <label for="msg">Message :</label>
-                <textarea name="msg" cols="30" rows="10" ng-model='msg' required></textarea>
+                <textarea name="msg" cols="30" rows="10" required></textarea>
 
-                <button type="submit" ng-disabled="Form.$invalid" id="envoi">Envoyer</button>
+                <button type="submit" id="envoi">Envoyer</button>
             </form>
         </section>
     </main>

@@ -1,4 +1,104 @@
 @import url("../main.css");
 header #burger div {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+main * {
+  transition: background-color 1s ease, left 1s ease, color 1s ease;
+}
+main .banner {
+  position: relative;
+  background-image: linear-gradient(to right bottom, transparent 0%, #813A32 100%);
+}
+main .banner h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+  padding: 15% 0 5% 0;
+  z-index: 1;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+main .banner nav {
+  display: flex;
+  position: relative;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: center;
+  gap: 9%;
+  margin-bottom: 5%;
+}
+main .banner nav button {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1% 2%;
+  cursor: pointer;
+}
+main .banner nav #audiov {
+  margin: 6% 0;
+}
+main .b1 {
+  background-color: #312ED3;
+}
+main .b1 nav button {
+  color: #625fff;
+}
+main .b2 {
+  background-color: #852ABC;
+}
+main .b2 nav button {
+  color: #b362e3;
+}
+main .b3 {
+  background-color: #FF9900;
+}
+main .b3 nav button {
+  color: #ff9900;
+}
+main h2 {
+  font-weight: 900;
+  font-size: 25px;
+}
+main .partie {
+  min-width: 100vw;
+  max-width: 100vw;
+}
+main .partie #p1 {
+  background-image: url("../../images/png/p1.png");
+}
+main .partie #p2 {
+  background-image: url("../../images/png/p2.png");
+}
+main .partie #p3 {
+  background-image: url("../../images/png/p3.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+main .partie1 h2 {
+  color: #232197;
+}
+main .partie2 h2 {
+  color: #852abc;
+}
+main .partie3 h2 {
+  color: #e98c00;
+}
+main .droite {
+  position: absolute;
+  left: 110vw;
+}
+main .gauche {
+  position: absolute;
+  left: -110vw;
+}
+main .centre {
+  position: absolute;
+  left: 0%;
 }/*# sourceMappingURL=realisations.css.map */

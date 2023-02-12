@@ -1,12 +1,5 @@
 @import url('../main.css');
 
-@mixin Titres {
-    // font-family: "Roboto", sans-serif;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    width: 100%;
-}
-
 $h2: #813A32;
 $h3: #D32E4C;
 
@@ -24,7 +17,6 @@ main {
         flex-flow: wrap column-reverse;
 
         h1 {
-            @include Titres();
             text-align: left;
             font-weight: 900;
             font-size: 38px;
@@ -50,14 +42,12 @@ main {
     }
 
     h2 {
-        @include Titres();
         font-weight: 900;
         color: $h2;
         font-size: 36px;
     }
 
     h3 {
-        @include Titres();
         font-weight: 700;
         color: $h3;
         font-size: 1.3rem;
@@ -85,7 +75,6 @@ main {
             height: 100%;
             background-color: $h3;
             transform: translateX(-20px);
-            z-index: 50;
         }
 
         #visite {
@@ -104,13 +93,66 @@ main {
 
         a {
             color: rgb(83, 83, 83);
-            ;
+        }
+
+        #real{
+            margin-bottom: 65vw;
+        }
+
+        .droite {
+            position: absolute;
+            left: 110%;
+        }
+
+        .gauche {
+            position: absolute;
+            left: -110%;
+        }
+
+        .centre {
+            position: absolute;
+            left: 0%;
+        }
+
+        #p1{
+            background-image: url('../../images/png/p1.png');
+        }
+
+        #carou{
+            margin-top: 3vh;
+        }
+
+        #carouselL{
+            transform: rotate(-90deg);
+            width: 10vw;
+            height: 10vw;
+            cursor: pointer;
+        }
+
+        #carouselR{
+            transform: rotate(90deg);
+            width: 10vw;
+            height: 10vw;
+            cursor: pointer;
+        }
+
+        .cta{
+            margin: 5% 0 0 0;
+            border-radius: 10px;
+            padding: 3vh 5vw;
+            text-transform: uppercase;
+            background-color: $h3;
+            border: none;
+            color: rgba(255, 255, 255, 0.934);
+            font-size: 0.9em;
+            font-weight:800;
+            text-decoration: none;
         }
 
         form {
             width: 60vw;
             padding: 10% 12%;
-            margin: 4vh 0 5vh 0;
+            margin: 4vh 0 10vh 0;
             border-radius: 15px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -144,10 +186,7 @@ main {
     }
 }
 
-.myform input.ng-invalid.ng-dirty, .myform textarea.ng-invalid.ng-dirty {
-    background-color: #FA787E;
-}
-
-.myform input.ng-valid.ng-dirty, .myform textarea.ng-valid.ng-dirty {
-    background-color: #78FA89;
+@media screen and (min-width: 1400px) {
+    
+    
 }

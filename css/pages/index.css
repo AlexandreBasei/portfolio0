@@ -11,31 +11,24 @@ main #title-container {
   flex-flow: wrap column-reverse;
 }
 main #title-container h1 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  width: 100%;
   text-align: left;
   font-weight: 900;
   font-size: 38px;
   padding-left: 25vw;
   z-index: 1;
   margin: 0;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   color: rgb(255, 255, 255);
 }
 main #title-container #portfolio {
   font-size: 80px;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   position: absolute;
   padding: 0 6vw 0 0;
   left: 0;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-image: none;
@@ -43,17 +36,11 @@ main #title-container #portfolio {
   z-index: 0;
 }
 main h2 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  width: 100%;
   font-weight: 900;
   color: #813A32;
   font-size: 36px;
 }
 main h3 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  width: 100%;
   font-weight: 700;
   color: #D32E4C;
   font-size: 1.3rem;
@@ -78,12 +65,10 @@ main article p::before {
   height: 100%;
   background-color: #D32E4C;
   transform: translateX(-20px);
-  z-index: 50;
 }
 main article #visite {
   padding: 3vh 20vw 0 25vw;
   text-align: left;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -96,10 +81,55 @@ main section {
 main section a {
   color: rgb(83, 83, 83);
 }
+main section #real {
+  margin-bottom: 65vw;
+}
+main section .droite {
+  position: absolute;
+  left: 110%;
+}
+main section .gauche {
+  position: absolute;
+  left: -110%;
+}
+main section .centre {
+  position: absolute;
+  left: 0%;
+}
+main section #p1 {
+  background-image: url("../../images/png/p1.png");
+}
+main section #carou {
+  margin-top: 3vh;
+}
+main section #carouselL {
+  transform: rotate(-90deg);
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer;
+}
+main section #carouselR {
+  transform: rotate(90deg);
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer;
+}
+main section .cta {
+  margin: 5% 0 0 0;
+  border-radius: 10px;
+  padding: 3vh 5vw;
+  text-transform: uppercase;
+  background-color: #D32E4C;
+  border: none;
+  color: rgba(255, 255, 255, 0.934);
+  font-size: 0.9em;
+  font-weight: 800;
+  text-decoration: none;
+}
 main section form {
   width: 60vw;
   padding: 10% 12%;
-  margin: 4vh 0 5vh 0;
+  margin: 4vh 0 10vh 0;
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -126,12 +156,4 @@ main section form #envoi {
   font-weight: bold;
   padding: 5% 10%;
   text-transform: uppercase;
-}
-
-.myform input.ng-invalid.ng-dirty, .myform textarea.ng-invalid.ng-dirty {
-  background-color: #FA787E;
-}
-
-.myform input.ng-valid.ng-dirty, .myform textarea.ng-valid.ng-dirty {
-  background-color: #78FA89;
 }/*# sourceMappingURL=index.css.map */

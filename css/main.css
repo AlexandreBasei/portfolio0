@@ -12,11 +12,17 @@ html {
   color: rgb(83, 83, 83);
   background-color: rgb(244, 244, 244);
   width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-x: hidden;
+  position: relative;
 }
 html body {
   padding: 0;
   margin: 0;
   width: 100vw;
+  overflow-x: hidden;
+  position: relative;
 }
 html * {
   transition: opacity 0.2s ease;
@@ -109,10 +115,81 @@ header .active a {
 }
 
 main h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
   text-align: center;
   margin: 0;
   padding-top: 10%;
 }
+main h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+main h3 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
+}
 main p {
   padding: 2% 12%;
+}
+main .projet {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  min-width: 100vw;
+  max-width: 100vw;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  margin-top: -5vw;
+  transform: scale(0.8);
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: left 1s ease, right 1s ease;
+}
+main .projet * {
+  opacity: 0;
+  pointer-events: none;
+}
+main .projet h3 {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.836);
+}
+main .projet p {
+  color: rgba(255, 255, 255, 0.836);
+  font-size: 0.6em;
+}
+main .projet a {
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5vh 4vw 1.4vh 3vw;
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+  header #burger, header #burger2 {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    pointer-events: all;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 97%;
+    flex-flow: wrap row;
+    justify-content: end;
+    padding: 3% 3% 0 0;
+    gap: 5%;
+  }
+  header nav a {
+    opacity: 1;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=main.css.map */
