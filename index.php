@@ -24,6 +24,7 @@ if (isset($_POST["msg"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/uicons-thin-straight/css/uicons-thin-straight.css">
     <link rel="stylesheet" href="./css/pages/index.css">
     <title>Alexandre Basei - Portfolio</title>
 </head>
@@ -37,8 +38,18 @@ if (isset($_POST["msg"])) {
         </button>
         <button id="burger2" class="caché" onclick="addClass('burger2','caché');rmClass('burger','caché');rmClass('navigation','active')">⛌</button>
         <nav id="navigation">
-            <a href="index.php" target="_self" rel="noopener noreferrer">Accueil</a>
-            <a href="real.htm" target="_self" rel="noopener noreferrer">Mes réalisations</a>
+            <a class="accueil" href="index.php" target="_self" rel="noopener noreferrer">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="ico1" src="https://cdn.lordicon.com/slduhdil.json" trigger="hover" target=".accueil" colors="primary:#ffffff" state="hover-2" style="width:32px;height:32px">
+                </lord-icon>
+                Accueil
+            </a>
+            <a class="real" href="real.htm" target="_self" rel="noopener noreferrer">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="ico2" src="https://cdn.lordicon.com/zvllgyec.json" trigger="hover" target=".real" colors="primary:#ffffff" state="hover" style="width:32px;height:32px">
+                </lord-icon>
+                Mes réalisations
+            </a>
         </nav>
     </header>
 
@@ -46,10 +57,13 @@ if (isset($_POST["msg"])) {
 
         <section id="title-container">
             <h1 id="portfolio">Portfolio</h1>
-            <h1>Alexandre<br>Basei</h1>
+            <h1>Alexandre <br> Basei</h1>
+            <div>
+                <a href="#real-container"><img src="./images/svg/scroll.svg" alt="scroller"></a>
+            </div>
         </section>
-
-        <section>
+        
+        <section id="real-container">
             <h2 id="real">Réalisations</h2>
 
             <div class="projet centre" id="p1">

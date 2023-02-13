@@ -35,6 +35,9 @@ main #title-container #portfolio {
   transform: scaleX(-1) rotateX(180deg);
   z-index: 0;
 }
+main #title-container i {
+  display: none;
+}
 main h2 {
   font-weight: 900;
   color: #813A32;
@@ -156,4 +159,67 @@ main section form #envoi {
   font-weight: bold;
   padding: 5% 10%;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1400px) {
+  main #title-container {
+    flex-flow: wrap column;
+    padding-left: 15vw;
+  }
+  main #title-container h1 {
+    font-size: 110px;
+    padding: 0;
+    text-align: left;
+    font-weight: 900;
+    z-index: 1;
+    margin: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    align-self: start;
+  }
+  main #title-container h1 br {
+    display: none;
+  }
+  main #title-container #portfolio {
+    font-size: 110px;
+    writing-mode: initial;
+    position: relative;
+    background-image: none;
+    transform: scaleX(1) rotateX(0deg);
+    margin: 0 0 -30px 0;
+    z-index: 0;
+  }
+  main #title-container div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    flex-flow: wrap row;
+    top: 88vh;
+    left: 0;
+    animation: scroller 4s ease infinite;
+  }
+  main #title-container div a img {
+    width: 10vh;
+    height: 10vh;
+    fill: white;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  main h2 {
+    font-weight: 900;
+    color: #813A32;
+    font-size: 76px;
+  }
+  main h3 {
+    font-weight: 700;
+    color: #D32E4C;
+    font-size: 26px;
+    margin-top: -6%;
+  }
 }/*# sourceMappingURL=index.css.map */

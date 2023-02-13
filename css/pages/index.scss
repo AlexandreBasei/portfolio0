@@ -39,6 +39,10 @@ main {
             transform: scaleX(-1) rotateX(180deg);
             z-index: 0;
         }
+
+        i{
+            display: none;
+        }
     }
 
     h2 {
@@ -95,7 +99,7 @@ main {
             color: rgb(83, 83, 83);
         }
 
-        #real{
+        #real {
             margin-bottom: 65vw;
         }
 
@@ -114,29 +118,29 @@ main {
             left: 0%;
         }
 
-        #p1{
+        #p1 {
             background-image: url('../../images/png/p1.png');
         }
 
-        #carou{
+        #carou {
             margin-top: 3vh;
         }
 
-        #carouselL{
+        #carouselL {
             transform: rotate(-90deg);
             width: 10vw;
             height: 10vw;
             cursor: pointer;
         }
 
-        #carouselR{
+        #carouselR {
             transform: rotate(90deg);
             width: 10vw;
             height: 10vw;
             cursor: pointer;
         }
 
-        .cta{
+        .cta {
             margin: 5% 0 0 0;
             border-radius: 10px;
             padding: 3vh 5vw;
@@ -145,7 +149,7 @@ main {
             border: none;
             color: rgba(255, 255, 255, 0.934);
             font-size: 0.9em;
-            font-weight:800;
+            font-weight: 800;
             text-decoration: none;
         }
 
@@ -187,6 +191,70 @@ main {
 }
 
 @media screen and (min-width: 1400px) {
+
+    main {
+
+        #title-container {
+            flex-flow: wrap column;
+            padding-left: 15vw;
+            h1 {
+                font-size: 110px;
+                padding: 0;
+                text-align: left;
+                font-weight: 900;
+                z-index: 1;
+                margin: 0;
+                width: fit-content;
+                height: fit-content;
+                color: rgb(255, 255, 255);
+                align-self: start;
+
+                br{
+                    display: none;
+                }
+            }
+
+            #portfolio {
+                font-size: 110px;
+                writing-mode: initial;
+                position: relative;
+                background-image: none;
+                transform: scaleX(1) rotateX(0deg);
+                margin: 0 0 -30px 0;
+                z-index: 0;
+            }
+
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                align-items: center;
+                flex-flow: wrap row;
+                top: 88vh;
+                left: 0;
+                animation: scroller 4s ease infinite;
+
+                a img{
+                    width: 10vh;
+                    height: 10vh;
+                    fill: white;
+                    user-select: none;
+                }
+            }
+        }
+
+        h2 {
+            font-weight: 900;
+            color: $h2;
+            font-size: 76px;
+        }
     
-    
+        h3 {
+            font-weight: 700;
+            color: $h3;
+            font-size: 26px;
+            margin-top: -6%;
+        }
+    }
 }

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("./fonts.css");
+@import url("./anim.css");
 .caché {
   opacity: 0;
   pointer-events: none;
@@ -16,6 +17,7 @@ html {
   height: fit-content;
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 html body {
   padding: 0;
@@ -23,6 +25,7 @@ html body {
   width: 100vw;
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 html * {
   transition: opacity 0.2s ease;
@@ -106,6 +109,9 @@ header nav a {
   width: 100vw;
   text-align: center;
   transition: opacity 0.8s;
+}
+header nav a lord-icon {
+  transform: translateY(5px);
 }
 header .active {
   pointer-events: all;

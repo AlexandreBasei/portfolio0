@@ -1,0 +1,8 @@
+@keyframes scroller {
+    10%{
+        transform: translateY(10px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+}

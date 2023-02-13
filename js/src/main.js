@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let carL = document.getElementById("carouselL");
     let carR = document.getElementById("carouselR");
     let proj = 1;
-    let nav = document.querySelector("header nav");
+    let nav = document.querySelectorAll("header nav a");
     let fond = document.getElementById("title-container");
 
     burger.addEventListener("click", () => {
@@ -20,22 +20,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
 
-        if (isOverlapping(nav, fond)) {
-            burger.children[0].style.backgroundColor = "white";
-            burger.children[1].style.backgroundColor = "white";
-            burger.children[2].style.backgroundColor = "white";
-            nav.children[0].style.color = "white";
-            nav.children[1].style.color = "white";
-    
-        } else {
-            burger.children[0].style.backgroundColor = "black";
-            burger.children[1].style.backgroundColor = "black";
-            burger.children[2].style.backgroundColor = "black";
-            nav.children[0].style.color = "black";
-            nav.children[1].style.color = "black";
+        if (window.innerWidth > 1400) {
+
+            if (isOverlapping(nav[0], fond)) {
+                burger.children[0].style.backgroundColor = "white";
+                burger.children[1].style.backgroundColor = "white";
+                burger.children[2].style.backgroundColor = "white";
+                nav[0].style.color = "white";
+                nav[1].style.color = "white";
+                document.getElementById("ico1").setAttribute("colors", "primary:#ffffff");
+                document.getElementById("ico2").setAttribute("colors", "primary:#ffffff");
+
+            } else {
+                burger.children[0].style.backgroundColor = "black";
+                burger.children[1].style.backgroundColor = "black";
+                burger.children[2].style.backgroundColor = "black";
+                nav[0].style.color = "black";
+                nav[1].style.color = "black";
+                document.getElementById("ico1").setAttribute("colors", "primary:#000000");
+                document.getElementById("ico2").setAttribute("colors", "primary:#000000");
+            }
         }
+        else{
+
+            if (isOverlapping(nav, fond)) {
+                burger.children[0].style.backgroundColor = "white";
+                burger.children[1].style.backgroundColor = "white";
+                burger.children[2].style.backgroundColor = "white";
+        
+            } else {
+                burger.children[0].style.backgroundColor = "black";
+                burger.children[1].style.backgroundColor = "black";
+                burger.children[2].style.backgroundColor = "black";
+            }
+        }
+
     });
-    
+
     carL.addEventListener("click", () => {
 
         switch (proj) {
