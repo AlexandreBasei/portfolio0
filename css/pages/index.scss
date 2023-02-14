@@ -153,17 +153,39 @@ main {
             text-decoration: none;
         }
 
+        #infos{
+            margin-top: -2vh;
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                margin: 2vh 0;
+                font-size: 1.7rem;
+            }
+            span{
+                min-width: 100%;
+                text-align: center;
+                position: relative;
+            }
+
+            br{
+                display: none;
+            }
+        }
+
         form {
             width: 60vw;
             padding: 10% 12%;
             margin: 4vh 0 10vh 0;
             border-radius: 15px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 
             input {
                 margin: 5% 0;
                 border-radius: 5px;
-                border: 1px solid black;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px;
                 padding: 3%;
                 border: none;
             }
@@ -171,19 +193,22 @@ main {
             textarea {
                 box-sizing: border-box;
                 resize: none;
-                line-height: 10px;
+                line-height: 15px;
                 border: none;
                 border-radius: 10px;
                 margin: 5% 0;
+                box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 3px;
             }
 
             #envoi {
                 margin: 0;
                 border: none;
                 border-radius: 10px;
-                background-color: rgb(157, 196, 238);
+                background-color: $h3;
+                color: white;
                 font-weight: bold;
                 padding: 5% 10%;
+                cursor: pointer;
                 text-transform: uppercase;
             }
         }
@@ -240,6 +265,10 @@ main {
                     height: 10vh;
                     fill: white;
                     user-select: none;
+                    transition: transform 0.3s ease;
+                }
+                a img:hover{
+                    transform: scale(1.07);
                 }
             }
         }
@@ -255,6 +284,99 @@ main {
             color: $h3;
             font-size: 26px;
             margin-top: -6%;
+        }
+
+        section{
+
+            #real{
+                margin-bottom:65vh;
+            }
+
+            #carou {
+                transform: translateY(1vh);
+            }
+    
+            #carouselL {
+                transform: rotate(-90deg);
+                width: 4vw;
+                height: 4vw;
+                cursor: pointer;
+            }
+    
+            #carouselR {
+                transform: rotate(90deg);
+                width: 4vw;
+                height: 4vw;
+                cursor: pointer;
+            }
+
+            .cta {
+                margin: 1.5% 0 0 0;
+                border-radius: 10px;
+                padding: 3vh 2vw;
+                text-transform: uppercase;
+                background-color: $h3;
+                border: none;
+                color: rgba(255, 255, 255, 0.934);
+                font-size: 1.4em;
+                font-weight: 800;
+                text-decoration: none;
+                transition: transform 0.3s ease;
+            }
+
+            .cta:hover{
+                transform: scale(1.05);
+            }
+
+            #infos{
+                margin-top: 0vh;
+            }
+
+            form {
+                width: fit-content;
+                padding: 2% 2%;
+                margin: 0vh 0 15vh 0;
+
+                input {
+                    margin: 3% 0;
+                }
+    
+                textarea {
+                    margin: 3% 0;
+                }
+                
+                #envoi {
+                    padding: 5% 5%;
+                    font-size: 1rem;
+                    transition: transform 0.3s ease;
+                }
+
+                #envoi:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        #contact{
+            flex-flow: wrap row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3vw;
+        }
+
+        article{
+
+            p{
+                font-size: 1.3rem;
+                margin-bottom: 1vh;
+            }
+
+            #visite {
+                padding: 0vh 20vw 0 25vw;
+                text-align: left;
+                width: fit-content;
+                margin-top: 0;
+            }
         }
     }
 }

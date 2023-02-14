@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else{
 
-            if (isOverlapping(nav, fond)) {
+            if (isOverlapping(burger, fond)) {
                 burger.children[0].style.backgroundColor = "white";
                 burger.children[1].style.backgroundColor = "white";
                 burger.children[2].style.backgroundColor = "white";

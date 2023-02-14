@@ -186,10 +186,12 @@ main .projet a {
     pointer-events: all;
     height: -moz-fit-content;
     height: fit-content;
-    width: 97%;
+    width: 30vw;
     flex-flow: wrap row;
     justify-content: end;
-    padding: 3% 3% 0 0;
+    padding: 1.8% 2% 0 0;
+    top: 0%;
+    right: 0%;
     gap: 5%;
   }
   header nav a {
@@ -197,5 +199,26 @@ main .projet a {
     width: -moz-fit-content;
     width: fit-content;
     font-size: 1.3rem;
+  }
+  main .projet {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 110vh;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    margin-top: -5vw;
+    transform: scale(0.55) translateY(12vh);
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: left 0.95s ease, right 1s ease;
+  }
+  main .projet * {
+    opacity: 0;
+    pointer-events: none;
   }
 }/*# sourceMappingURL=main.css.map */

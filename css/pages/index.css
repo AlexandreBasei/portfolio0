@@ -129,35 +129,57 @@ main section .cta {
   font-weight: 800;
   text-decoration: none;
 }
+main section #infos {
+  margin-top: -2vh;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+main section #infos h3 {
+  margin: 2vh 0;
+  font-size: 1.7rem;
+}
+main section #infos span {
+  min-width: 100%;
+  text-align: center;
+  position: relative;
+}
+main section #infos br {
+  display: none;
+}
 main section form {
   width: 60vw;
   padding: 10% 12%;
   margin: 4vh 0 10vh 0;
   border-radius: 15px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 main section form input {
   margin: 5% 0;
   border-radius: 5px;
-  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px;
   padding: 3%;
   border: none;
 }
 main section form textarea {
   box-sizing: border-box;
   resize: none;
-  line-height: 10px;
+  line-height: 15px;
   border: none;
   border-radius: 10px;
   margin: 5% 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 3px;
 }
 main section form #envoi {
   margin: 0;
   border: none;
   border-radius: 10px;
-  background-color: rgb(157, 196, 238);
+  background-color: #D32E4C;
+  color: white;
   font-weight: bold;
   padding: 5% 10%;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -210,6 +232,10 @@ main section form #envoi {
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+    transition: transform 0.3s ease;
+  }
+  main #title-container div a img:hover {
+    transform: scale(1.07);
   }
   main h2 {
     font-weight: 900;
@@ -221,5 +247,79 @@ main section form #envoi {
     color: #D32E4C;
     font-size: 26px;
     margin-top: -6%;
+  }
+  main section #real {
+    margin-bottom: 65vh;
+  }
+  main section #carou {
+    transform: translateY(1vh);
+  }
+  main section #carouselL {
+    transform: rotate(-90deg);
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+  }
+  main section #carouselR {
+    transform: rotate(90deg);
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+  }
+  main section .cta {
+    margin: 1.5% 0 0 0;
+    border-radius: 10px;
+    padding: 3vh 2vw;
+    text-transform: uppercase;
+    background-color: #D32E4C;
+    border: none;
+    color: rgba(255, 255, 255, 0.934);
+    font-size: 1.4em;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  main section .cta:hover {
+    transform: scale(1.05);
+  }
+  main section #infos {
+    margin-top: 0vh;
+  }
+  main section form {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 2% 2%;
+    margin: 0vh 0 15vh 0;
+  }
+  main section form input {
+    margin: 3% 0;
+  }
+  main section form textarea {
+    margin: 3% 0;
+  }
+  main section form #envoi {
+    padding: 5% 5%;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  main section form #envoi:hover {
+    transform: scale(1.05);
+  }
+  main #contact {
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+  }
+  main article p {
+    font-size: 1.3rem;
+    margin-bottom: 1vh;
+  }
+  main article #visite {
+    padding: 0vh 20vw 0 25vw;
+    text-align: left;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 0;
   }
 }/*# sourceMappingURL=index.css.map */
