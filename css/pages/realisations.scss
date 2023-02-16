@@ -1,8 +1,4 @@
-@import url('../main.css');
-
-header #burger div{
-    background-color: rgb(0, 0, 0);
-}
+@import url("../main.css");
 
 $hdev: #232197;
 $hgraph: #852abc;
@@ -12,21 +8,19 @@ $navdev: #625fff;
 $navgraph: #b362e3;
 $navaudiov: #ff9900;
 
-html, body{
+body {
     min-height: 100vh;
 }
 
-main{
-
-    *{
+main {
+    * {
         transition: background-color 1s ease, left 1s ease, color 1s ease;
     }
 
-    .banner{
-
+    .banner {
         // height: 30vh;
         position: relative;
-        background-image: linear-gradient(to right bottom, transparent 0%, #813A32 100%);
+        background-image: linear-gradient(to right bottom, transparent 0%, #813a32 100%);
 
         h1 {
             text-transform: uppercase;
@@ -38,7 +32,7 @@ main{
             color: rgb(255, 255, 255);
         }
 
-        nav{
+        nav {
             display: flex;
             position: relative;
             flex-flow: wrap row;
@@ -47,81 +41,80 @@ main{
             gap: 9%;
             margin-bottom: 5%;
 
-            button{
+            button {
                 border: none;
                 border-radius: 5px;
                 font-size: 1rem;
                 font-weight: 700;
                 padding: 1% 2%;
                 cursor: pointer;
+                transition: color 0.5s ease;
             }
 
-            #audiov{
+            #audiov {
                 margin: 6% 0;
             }
         }
-
     }
 
-    .b1{
-        background-color: #312ED3;
-    
-        nav button{
+    .b1 {
+        background-color: #312ed3;
+
+        nav button {
             color: $navdev;
         }
     }
 
-    .b2{
-        background-color: #852ABC;
-    
-        nav button{
+    .b2 {
+        background-color: #852abc;
+
+        nav button {
             color: $navgraph;
         }
     }
 
-    .b3{
-        background-color: #FF9900;
-    
-        nav button{
+    .b3 {
+        background-color: #ff9900;
+
+        nav button {
             color: $navaudiov;
         }
     }
 
     h2 {
         font-weight: 900;
-        // color: $h2;
         font-size: 25px;
     }
 
-    .partie{
+    .partie {
         min-width: 100vw;
         max-width: 100vw;
 
-        #p1{
-            background-image: url('../../images/png/p1.png');
+        #p1 {
+            background-image: url("../../images/png/p1.png");
         }
 
-        #p2{
-            background-image: url('../../images/png/p2.png');
+        #p2 {
+            background-image: url("../../images/png/p2.png");
         }
 
-        #p3{
-            background-image: url('../../images/png/p3.png');
+        #p3 {
+            background-image: url("../../images/png/p3.png");
             background-size: cover;
             background-position-x: center;
             background-position-y: bottom;
         }
     }
 
-    .partie1 h2{
+    .partie1 h2 {
         color: $hdev;
     }
 
-    .partie2 h2{
+    .partie2 h2 {
         color: $hgraph;
     }
 
-    .partie3 h2{
+    .partie3 h2 {
         color: $haudiov;
     }
 
@@ -138,5 +131,115 @@ main{
     .centre {
         position: absolute;
         left: 0%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    main {
+        .banner {
+            h1 {
+                font-size: 96px;
+                padding: 15vh 0 6vh 0;
+            }
+
+            nav {
+                gap: 5%;
+                margin-bottom: 0;
+
+                button {
+                    padding: 1% 2%;
+                    margin-bottom: 6vh;
+                    font-size: 1.6rem;
+                    transition: transform 0.3s ease, color 0.5s ease;
+                    z-index: 15;
+                }
+
+                button:hover {
+                    transform: scale(1.05);
+                }
+
+                #audiov {
+                    margin: 0 0 6vh 0;
+                }
+            }
+        }
+
+        h2 {
+            font-weight: 900;
+            font-size: 76px;
+            margin: 6vh 0 0 0;
+        }
+
+        .real {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            align-items: center;
+            gap: 3vw;
+            margin: 6vh 0 10vh 0;
+
+            .projet {
+                justify-content: start;
+                // align-items: start;
+                flex-flow: nowrap column;
+                min-width: 35vw;
+                max-width: 35vw;
+                min-height: 350px;
+                max-height: 350px;
+                margin-top: 0vw;
+                transform: scale(1) translateY(0vh);
+                transition: transform 0.3s ease;
+                padding: 3%;
+
+                * {
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 0.3s ease;
+                }
+
+                h3{
+                    text-align: left;
+                    font-size: 26px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1rem;
+                    font-family: "Poppins", sans-serif;
+                }
+                
+                a{
+                    margin-top: 1%;
+                }
+            }
+
+            .projet::before{
+                z-index: 1;
+                content: '';
+                width: 100%;
+                height: 100%;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.707);
+                border-radius: 40px;
+                position: absolute;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .projet:hover{
+                transform: scale(1.05);
+                *{
+                    opacity: 1;
+                    pointer-events: all;
+                    z-index: 2;
+                }
+            }
+            .projet:hover::before{
+                opacity: 1;
+            }
+        }
     }
 }

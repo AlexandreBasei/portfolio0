@@ -81,7 +81,7 @@ if (isset($_POST["msg"])) {
 
                     Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en équipe.
                 </p>
-                <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                <a href="http://noel.alexandre.basei.mmi-velizy.fr" target="_blank" rel="noopener noreferrer" class="target">
                     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                     <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                         colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">

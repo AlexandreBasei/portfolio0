@@ -13,15 +13,27 @@
     <header>
         <button id="burger"
             onclick="addClass('burger','caché');addClass('navigation','active');rmClass('burger2','caché')">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="ham1"></div>
+            <div id="ham2"></div>
+            <div id="ham3"></div>
         </button>
         <button id="burger2" class="caché"
             onclick="addClass('burger2','caché');rmClass('burger','caché');rmClass('navigation','active')">⛌</button>
         <nav id="navigation">
-            <a href="index.php" target="_self" rel="noopener noreferrer">Accueil</a>
-            <a href="real.htm" target="_self" rel="noopener noreferrer">Mes réalisations</a>
+            <a class="accueil" href="index.php" target="_self" rel="noopener noreferrer">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="ico1" src="https://cdn.lordicon.com/slduhdil.json" trigger="hover" target=".accueil"
+                    colors="primary:#ffffff" state="hover-2" style="width:32px;height:32px">
+                </lord-icon>
+                Accueil
+            </a>
+            <a class="real" href="real.htm" target="_self" rel="noopener noreferrer">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="ico2" src="https://cdn.lordicon.com/zvllgyec.json" trigger="hover" target=".real"
+                    colors="primary:#ffffff" state="hover" style="width:32px;height:32px">
+                </lord-icon>
+                Mes réalisations
+            </a>
         </nav>
     </header>
 
@@ -54,7 +66,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="http://noel.alexandre.basei.mmi-velizy.fr" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -63,18 +75,14 @@
                 </div>
 
                 <div class="projet" id="p2">
-                    <h3>Leclerc Noël</h3>
-                    <p>Ce projet avait pour objectif de réaliser un site web avec l’expérience utilisateur la plus
-                        qualitative possible ayant pour thème Noël et la chaîne de magasins Leclerc. Le site web
-                        s’adresse aux enfants de 5 à 10 ans.<br><br>
-
-                        Je faisais partie d’une équipe de 8 membres, dont 5 graphistes et 3 développeurs. J’ai développé
-                        la grotte gelée, l’igloo de la photo, le sapin de Noël et le palais de la gourmandise. <br><br>
-
-                        Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
-                        équipe.
+                    <h3>Datavisualisation</h3>
+                    <p>Ce projet avait pour objectif de réaliser un site web mettant en valeur des données récupérées dans des bases de données publiques ou via des API<br><br>
+    
+                        Les contraintes étaient également d'utiliser la bibliothèque ChartJS pour générer des graphiques. <br><br>
+    
+                        Nous étions deux sur ce projet : je me suis occupé du développement front et back du site web et mon coéquipier de la recherche des couleurs et typographies.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="http://data.alexandre.basei.mmi-velizy.fr/2_Fichiers/1_HTML/" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -83,6 +91,22 @@
                 </div>
 
                 <div class="projet" id="p3">
+                    <h3>Violences conjugales - Webdocumentaire</h3>
+                    <p>Ce projet avait pour objectif de réaliser un webdocumentaire sur un sujet libre, avec quatre formats différents<br><br>
+
+                        Chaque format devait aborder un aspect spécifique du sujet principal, ici l'aspect juridique, psychologique et social.<br><br>
+
+                        Ce projet devait être réalisé en groupes de quatre, et je me suis occupé du développement du site web, avec comme support une maquette créée en collaboration avec mes équipiers.
+                    </p>
+                    <a href="http://medusawebdoc.alexandre.basei.mmi-velizy.fr/" target="_blank" rel="noopener noreferrer" class="target">
+                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
+                            colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
+                        </lord-icon>VISITER
+                    </a>
+                </div>
+
+                <!-- <div class="projet" id="p4">
                     <h3>Leclerc Noël</h3>
                     <p>Ce projet avait pour objectif de réaliser un site web avec l’expérience utilisateur la plus
                         qualitative possible ayant pour thème Noël et la chaîne de magasins Leclerc. Le site web
@@ -94,33 +118,13 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
                         </lord-icon>VISITER
                     </a>
-                </div>
-
-                <div class="projet" id="p4">
-                    <h3>Leclerc Noël</h3>
-                    <p>Ce projet avait pour objectif de réaliser un site web avec l’expérience utilisateur la plus
-                        qualitative possible ayant pour thème Noël et la chaîne de magasins Leclerc. Le site web
-                        s’adresse aux enfants de 5 à 10 ans.<br><br>
-
-                        Je faisais partie d’une équipe de 8 membres, dont 5 graphistes et 3 développeurs. J’ai développé
-                        la grotte gelée, l’igloo de la photo, le sapin de Noël et le palais de la gourmandise. <br><br>
-
-                        Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
-                        équipe.
-                    </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
-                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
-                            colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
-                        </lord-icon>VISITER
-                    </a>
-                </div>
+                </div> -->
             </section>
         </section>
 
@@ -141,7 +145,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -161,7 +165,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -181,7 +185,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -201,7 +205,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -228,7 +232,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -248,7 +252,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -268,7 +272,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
@@ -288,7 +292,7 @@
                         Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en
                         équipe.
                     </p>
-                    <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
+                    <a href="./real.htm" target="_blank" rel="noopener noreferrer" class="target">
                         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
                             colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
