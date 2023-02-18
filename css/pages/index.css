@@ -175,7 +175,7 @@ main section #p2 img, main section #p3 img {
 main section #p3 {
   min-width: 50vw;
   max-width: 50vw;
-  height: 50vh;
+  height: 50vw;
   padding-left: 25vw;
 }
 main section form {
