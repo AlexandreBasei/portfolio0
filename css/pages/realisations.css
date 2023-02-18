@@ -213,6 +213,10 @@ main .partie2 .real #last, main .partie3 .real #last {
     max-width: 25vw;
     margin-top: 3vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+  }
+  main .partie2 .real img:hover, main .partie3 .real img:hover {
+    transform: scale(1.05);
   }
   main .partie2 .real #last, main .partie3 .real #last {
     margin-bottom: 3vh;
