@@ -178,6 +178,9 @@ main section #p3 {
   height: 50vw;
   padding-left: 25vw;
 }
+main section #p3 * {
+  pointer-events: all;
+}
 main section form {
   width: 60vw;
   padding: 10% 12%;
