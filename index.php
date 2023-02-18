@@ -6,6 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
+require './config.php';
 
 if (isset($_POST["msg"])) {
 
@@ -15,12 +16,12 @@ if (isset($_POST["msg"])) {
         //Server settings
         $mail->SMTPDebug = false;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'servd162214.srv.odns.fr';                     //Set the SMTP server to send through
+        $mail->Host       = HOST;                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'abasei@alexandre.basei.mmi-velizy.fr';                     //SMTP username
-        $mail->Password   = 'v45LV*yQ#uWpvZr';                               //SMTP password
+        $mail->Username   = USER;                     //SMTP username
+        $mail->Password   = PWD;                               //SMTP password
         $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
-        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->Port       = PORT;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
         $mail->setFrom($_POST["source"], $_POST["source"]);
