@@ -90,41 +90,12 @@ if (isset($_POST["msg"])) {
             </div>
 
             <div class="projet droite" id="p2">
-                <h3>Leclerc Noël</h3>
-                <p>Ce projet avait pour objectif de réaliser un site web avec l’expérience utilisateur la plus
-                    qualitative possible ayant pour thème Noël et la chaîne de magasins Leclerc. Le site web s’adresse
-                    aux enfants de 5 à 10 ans.<br><br>
-
-                    Je faisais partie d’une équipe de 8 membres, dont 5 graphistes et 3 développeurs. J’ai développé la
-                    grotte gelée, l’igloo de la photo, le sapin de Noël et le palais de la gourmandise. <br><br>
-
-                    Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en équipe.
-                </p>
-                <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
-                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                    <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
-                        colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
-                    </lord-icon>VISITER
-                </a>
+                <img src="./images/gif/Basei_AnimJPO.gif" alt="Animation bombe">
+                <img src="./images/gif/M5-3-2.gif" alt="">
             </div>
 
-            <div class="projet droite" id="p3">
-                <h3>Leclerc Noël</h3>
-                <p>Ce projet avait pour objectif de réaliser un site web avec l’expérience utilisateur la plus
-                    qualitative possible ayant pour thème Noël et la chaîne de magasins Leclerc. Le site web s’adresse
-                    aux enfants de 5 à 10 ans.<br><br>
-
-                    Je faisais partie d’une équipe de 8 membres, dont 5 graphistes et 3 développeurs. J’ai développé la
-                    grotte gelée, l’igloo de la photo, le sapin de Noël et le palais de la gourmandise. <br><br>
-
-                    Nous avons utilisé github pour réaliser le projet et pour travailler plus efficacement en équipe.
-                </p>
-                <a href="./real.htm" target="_self" rel="noopener noreferrer" class="target">
-                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                    <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
-                        colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
-                    </lord-icon>VISITER
-                </a>
+            <div class="projet droite icontainer" id="p3">
+                <iframe class="resp-iframe" src="https://www.youtube.com/embed/4m4eWzHaC6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <div id="carou">

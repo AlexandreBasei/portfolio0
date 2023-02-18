@@ -177,6 +177,17 @@ main .projet a {
   font-family: "Poppins", sans-serif;
   border-radius: 20px;
 }
+main .icontainer {
+  height: 50vw;
+  width: 75vw;
+  margin-top: 3vh;
+}
+main .icontainer .resp-iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  opacity: 1;
+}
 
 @media screen and (min-width: 1400px) {
   header #burger, header #burger2 {
@@ -200,5 +211,15 @@ main .projet a {
     width: -moz-fit-content;
     width: fit-content;
     font-size: 1.3rem;
+  }
+  main .icontainer {
+    height: 50vh;
+    width: 50vw;
+  }
+  main .icontainer .resp-iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */

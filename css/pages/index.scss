@@ -122,6 +122,15 @@ main {
             background-image: url('../../images/png/p1.png');
         }
 
+        #p2{
+            box-shadow: none;
+            img{
+                opacity: 1;
+                min-width: 75vw;
+                max-width: 75vw;
+            }
+        }
+
         #carou {
             margin-top: 3vh;
         }
@@ -173,6 +182,31 @@ main {
             br{
                 display: none;
             }
+        }
+
+        #p2, #p3{
+            min-width: 100vw;
+            max-width: 100vw;
+            height: 30vh;
+            transform: scale(1) translateY(0);
+            box-shadow: none;
+            flex-flow: wrap row;
+            justify-content: center;
+            gap: 3vw;
+
+            img{
+                opacity: 1;
+                min-width: 40vw;
+                max-width: 40vw;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+
+        #p3{
+            min-width: 50vw;
+            max-width: 50vw;
+            height: 50vh;
+            padding-left: 25vw;
         }
 
         form {
@@ -330,6 +364,36 @@ main {
 
             #infos{
                 margin-top: 0vh;
+            }
+
+            #p2, #p3{
+                min-width: 100vw;
+                max-width: 100vw;
+                height: 30vh;
+                transform: scale(1) translateY(0);
+                box-shadow: none;
+                flex-flow: wrap row;
+                justify-content: center;
+                gap: 3vw;
+
+                img{
+                    opacity: 1;
+                    min-width: 25vw;
+                    max-width: 25vw;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+
+            #p2:hover::before, #p3:hover::before{
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            #p3{
+                min-width: 50vw;
+                max-width: 50vw;
+                height: 50vh;
+                padding-left: 25vw;
             }
 
             form {

@@ -132,6 +132,23 @@ main {
         position: absolute;
         left: 0%;
     }
+
+    .partie2 .real, .partie3 .real{
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            min-width: 50vw;
+            max-width: 50vw;
+            margin-top: 3vh;
+        }
+
+        #last{
+            margin-bottom: 3vh;
+        }
+    }
 }
 
 @media screen and (min-width: 1300px) {
@@ -239,6 +256,22 @@ main {
             }
             .projet:hover::before{
                 opacity: 1;
+            }
+        }
+
+        .partie2 .real, .partie3 .real{
+            flex-flow: wrap row;
+            gap: 3vw;
+    
+            img{
+                min-width: 25vw;
+                max-width: 25vw;
+                margin-top: 3vh;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+    
+            #last{
+                margin-bottom: 3vh;
             }
         }
     }

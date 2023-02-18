@@ -102,6 +102,14 @@ main section .centre {
 main section #p1 {
   background-image: url("../../images/png/p1.png");
 }
+main section #p2 {
+  box-shadow: none;
+}
+main section #p2 img {
+  opacity: 1;
+  min-width: 75vw;
+  max-width: 75vw;
+}
 main section #carou {
   margin-top: 3vh;
 }
@@ -147,6 +155,28 @@ main section #infos span {
 }
 main section #infos br {
   display: none;
+}
+main section #p2, main section #p3 {
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 30vh;
+  transform: scale(1) translateY(0);
+  box-shadow: none;
+  flex-flow: wrap row;
+  justify-content: center;
+  gap: 3vw;
+}
+main section #p2 img, main section #p3 img {
+  opacity: 1;
+  min-width: 40vw;
+  max-width: 40vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main section #p3 {
+  min-width: 50vw;
+  max-width: 50vw;
+  height: 50vh;
+  padding-left: 25vw;
 }
 main section form {
   width: 60vw;
@@ -284,6 +314,32 @@ main section form #envoi {
   }
   main section #infos {
     margin-top: 0vh;
+  }
+  main section #p2, main section #p3 {
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 30vh;
+    transform: scale(1) translateY(0);
+    box-shadow: none;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: 3vw;
+  }
+  main section #p2 img, main section #p3 img {
+    opacity: 1;
+    min-width: 25vw;
+    max-width: 25vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  main section #p2:hover::before, main section #p3:hover::before {
+    opacity: 0;
+    pointer-events: none;
+  }
+  main section #p3 {
+    min-width: 50vw;
+    max-width: 50vw;
+    height: 50vh;
+    padding-left: 25vw;
   }
   main section form {
     width: -moz-fit-content;
