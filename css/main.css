@@ -142,6 +142,7 @@ main p {
   padding: 2% 12%;
 }
 main .projet {
+  position: relative;
   display: flex;
   flex-flow: wrap column;
   justify-content: center;
@@ -170,12 +171,13 @@ main .projet p {
   font-size: 0.6em;
 }
 main .projet a {
-  text-decoration: none;
-  text-align: center;
-  padding: 0.5vh 4vw 1.4vh 3vw;
-  background-color: white;
-  font-family: "Poppins", sans-serif;
-  border-radius: 20px;
+  background-color: transparent;
+  color: transparent;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: all;
 }
 main .icontainer {
   height: 50vw;
@@ -221,5 +223,23 @@ main .icontainer .resp-iframe {
     height: 100%;
     aspect-ratio: 16/9;
     opacity: 1;
+  }
+  main .projet a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1vh 3vw 1vh 4vw;
+    background-color: white;
+    color: black;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    position: relative;
+  }
+  main .projet a lord-icon {
+    display: block;
+    position: absolute;
+    transform: translateX(-30px);
   }
 }/*# sourceMappingURL=main.css.map */

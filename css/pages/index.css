@@ -58,7 +58,8 @@ main article h2 {
 }
 main article p {
   margin-top: 0;
-  padding: 0 20vw 0 25vw;
+  text-align: left;
+  padding: 0 10vw 0 15vw;
   position: relative;
 }
 main article p::before {
@@ -70,7 +71,7 @@ main article p::before {
   transform: translateX(-20px);
 }
 main article #visite {
-  padding: 3vh 20vw 0 25vw;
+  padding: 3vh 20vw 0 15vw;
   text-align: left;
   width: -moz-fit-content;
   width: fit-content;
@@ -401,14 +402,16 @@ main section form #envoi {
     width: 80%;
     left: 0;
   }
-  main section .projet a {
+  main section .projet .target {
     margin: 3% 0 0 5%;
     font-size: 2rem;
+    padding-left: 5vw;
   }
-  main section .projet a lord-icon {
-    width: 50px !important;
-    height: 50px !important;
-    top: 10px !important;
+  main section .projet .target #icon {
+    min-width: 40px;
+    min-height: 40px;
+    top: 10px;
+    transform: translateX(-45px);
   }
   main section .projet::before {
     z-index: 1;

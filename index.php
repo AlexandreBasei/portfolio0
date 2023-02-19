@@ -117,8 +117,8 @@ if (isset($_POST["msg"])) {
                 </p>
                 <a href="http://noel.alexandre.basei.mmi-velizy.fr" target="_blank" rel="noopener noreferrer" class="target">
                     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                    <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
-                        colors="primary:#121331" state="hover" style="width:25px;height:25px;top:5px">
+                    <lord-icon id="icon" src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
+                        colors="primary:#121331" state="hover" style="width:25px;height:25px;">
                     </lord-icon>VISITER
                 </a>
             </div>
@@ -143,7 +143,7 @@ if (isset($_POST["msg"])) {
                 </lord-icon>
             </div>
 
-            <a href="./real.htm" target="_self" rel="noopener noreferrer" class="cta">Découvrir mes autres projets</a>
+            <a href="./real.htm" target="_self" rel="noopener noreferrer" class="cta">Voir tous projets</a>
         </section>
 
         <article>

@@ -178,9 +178,6 @@ main .partie2 .real #last, main .partie3 .real #last {
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
   }
-  main .real .projet a {
-    margin-top: 1%;
-  }
   main .real .projet::before {
     z-index: 1;
     content: "";
