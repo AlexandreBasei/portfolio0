@@ -159,47 +159,42 @@ main{
     }
     
     .projet{
-        position: relative;
         display: flex;
-        flex-flow: wrap column;
+        flex-flow: wrap row;
         justify-content: center;
-        min-width: 100vw;
-        max-width: 100vw;
         align-items: center;
+        border-radius: 30px;
+        width: 70vw;
+        height: 30vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: left 0.95s ease, right 1s ease, transform 0.3s ease;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 40px;
-        margin-top: -5vw;
-        transform: scale(0.8);
-        max-width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        transition: left 1s ease, right 1s ease;
-        // transition: all 1s ease;
-        
+
         *{
-            opacity: 0;
-            pointer-events: none;
+            transition: left 0.95s ease, right 1s ease, transform 0.3s ease;
         }
-
-        h3{
-            margin-bottom: 0;
-            color: white;
-        }
-
-        p{
-            color: white;
-            font-size: 0.6em;
-        }
-
+        
         a{
             background-color: transparent;
-            color: transparent;
-            border-radius: 40px;
             width: 100%;
             height: 100%;
-            position: absolute;
-            pointer-events: all;
         }
+
+        img{
+            width: 49%;
+            pointer-events: all;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    .projet:hover{
+        transform: scale(1.05);
     }
 
     .icontainer{
@@ -216,7 +211,27 @@ main{
     }
 }
 
-@media screen and (min-width: 1400px) {
+footer{
+    @include Titres();
+    background-color: #D32E4C;
+    color: whitesmoke;
+    flex-flow: wrap column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 7%;
+    
+    div{
+        margin: 2%;
+    }
+
+    a{
+        margin: 2%;
+        color: whitesmoke;
+    }
+}
+
+@media screen and (min-width: 1280px) {
 
     header{
         #burger, #burger2{
@@ -258,26 +273,27 @@ main{
         }
 
         .projet{
-            a{
-                text-decoration: none;
-                text-align: center;
-                padding: 1vh 3vw 1vh 4vw;
-                background-color: white;
-                color: black;
-                width: fit-content;
-                height: auto;
-                // top: 0;
-                // margin-top: 0;
-                font-family: "Poppins", sans-serif;
-                border-radius: 20px;
-                position: relative;
+            width: 50vw;
+            height: 60vh;
+            border-radius: 20px;
+        }
+    }
 
-                lord-icon{
-                    display: block;
-                    position: absolute;
-                    transform: translateX(-30px);
-                }
-            }
+    footer{
+        flex-flow: wrap row;
+        justify-content: center;
+        padding-bottom: 0%;
+        h3{
+            width: 100%;
+            font-size: 2rem;
+        }
+        font-size: 1.5rem;
+
+        #mentions{
+            width: 49%;
+        }
+        #copyright{
+            width: 50%;
         }
     }
 }

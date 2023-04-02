@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/projets.css">
+    <title>Alexandre Basei - Animation Learning Club</title>
+</head>
+
+<body>
+    <header>
+        <button id="burger"
+            onclick="addClass('burger','caché');addClass('navigation','active');rmClass('burger2','caché')">
+            <div id="ham1"></div>
+            <div id="ham2"></div>
+            <div id="ham3"></div>
+        </button>
+        <button id="burger2" class="caché"
+            onclick="addClass('burger2','caché');rmClass('burger','caché');rmClass('navigation','active')">⛌</button>
+        <nav id="navigation">
+            <a class="accueil" href="index.php" target="_self" rel="noopener noreferrer">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="ico1" src="https://cdn.lordicon.com/slduhdil.json" trigger="hover" target=".accueil"
+                    colors="primary:#ffffff" state="hover-2" style="width:32px;height:32px">
+                </lord-icon>
+                Accueil
+            </a>
+            <a class="real" href="real.htm" target="_self" rel="noopener noreferrer">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="ico2" src="https://cdn.lordicon.com/zvllgyec.json" trigger="hover" target=".real"
+                    colors="primary:#ffffff" state="hover" style="width:32px;height:32px">
+                </lord-icon>
+                Mes réalisations
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Animation Learning Club</h1>
+
+        <img id="images" src="./images/gif/M5-3-2.gif" alt="Animation JPO bombe qui explose">
+
+        <p style="margin-bottom: 2%;">Ce projet avait pour objectif de réaliser un post Linkedin animé pour la campagne de communication de l'entreprise Learning Concept.<br><br>
+
+            J'ai réalisé ce travail à l'aide des logiciels After Effects et Photoshop, dans le cadre de mon stage de première année chez Learning Concept.
+        </p>
+    </main>
+    
+    <footer>
+        <h3>Contact</h3>
+        <div>alexandreacevedobasei@gmail.com</div>
+        <div>06 46 88 46 88</div>
+        <a href="https://www.linkedin.com/in/alexandre-basei" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandre-basei</a>
+        <a id="mentions" href="mentions-legales.html" target="_self" rel="noopener noreferrer">Mentions légales</a>
+        <div id="copyright">© Alexandre Basei - All rights reserved</div>
+    </footer>
+</body>
+
+<script src="./js/src/functions.js"></script>
+<script src="./js/src/projets.js"></script>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/projets.css">
+    <title>Alexandre Basei - Webdocumentaire</title>
+</head>
+
+<body>
+    <header>
+        <button id="burger"
+            onclick="addClass('burger','caché');addClass('navigation','active');rmClass('burger2','caché')">
+            <div id="ham1"></div>
+            <div id="ham2"></div>
+            <div id="ham3"></div>
+        </button>
+        <button id="burger2" class="caché"
+            onclick="addClass('burger2','caché');rmClass('burger','caché');rmClass('navigation','active')">⛌</button>
+        <nav id="navigation">
+            <a class="accueil" href="index.php" target="_self" rel="noopener noreferrer">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="ico1" src="https://cdn.lordicon.com/slduhdil.json" trigger="hover" target=".accueil"
+                    colors="primary:#ffffff" state="hover-2" style="width:32px;height:32px">
+                </lord-icon>
+                Accueil
+            </a>
+            <a class="real" href="real.htm" target="_self" rel="noopener noreferrer">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon id="ico2" src="https://cdn.lordicon.com/zvllgyec.json" trigger="hover" target=".real"
+                    colors="primary:#ffffff" state="hover" style="width:32px;height:32px">
+                </lord-icon>
+                Mes réalisations
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Violences conjugales - Webdocumentaire</h1>
+
+        <a id="webdoc" href="http://medusawebdoc.alexandre.basei.mmi-velizy.fr/" target="_blank" rel="noopener noreferrer"></a>
+
+        <p>Ce projet avait pour objectif de réaliser un webdocumentaire sur un sujet libre, avec quatre formats différents<br><br>
+
+            Chaque format devait aborder un aspect spécifique du sujet principal, ici l'aspect juridique, psychologique et social.<br><br>
+
+            Ce projet devait être réalisé en groupes de quatre, et je me suis occupé du développement du site web, avec comme support une maquette créée en collaboration avec mes équipiers.
+        </p>
+
+
+        <a id="visite" href="http://medusawebdoc.alexandre.basei.mmi-velizy.fr/" target="_blank" rel="noopener noreferrer" class="target">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon id="icon" src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" target=".target"
+                colors="primary:#121331" state="hover" style="width:25px;height:25px;">
+            </lord-icon>VISITER
+        </a>
+    </main>
+    
+    <footer>
+        <h3>Contact</h3>
+        <div>alexandreacevedobasei@gmail.com</div>
+        <div>06 46 88 46 88</div>
+        <a href="https://www.linkedin.com/in/alexandre-basei" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandre-basei</a>
+        <a id="mentions" href="mentions-legales.html" target="_self" rel="noopener noreferrer">Mentions légales</a>
+        <div id="copyright">© Alexandre Basei - All rights reserved</div>
+    </footer>
+</body>
+
+<script src="./js/src/functions.js"></script>
+<script src="./js/src/projets.js"></script>
+
+</html>

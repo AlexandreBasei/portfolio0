@@ -142,42 +142,37 @@ main p {
   padding: 2% 12%;
 }
 main .projet {
-  position: relative;
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: wrap row;
   justify-content: center;
-  min-width: 100vw;
-  max-width: 100vw;
   align-items: center;
+  border-radius: 30px;
+  width: 70vw;
+  height: 30vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: left 0.95s ease, right 1s ease, transform 0.3s ease;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  margin-top: -5vw;
-  transform: scale(0.8);
-  max-width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: left 1s ease, right 1s ease;
 }
 main .projet * {
-  opacity: 0;
-  pointer-events: none;
-}
-main .projet h3 {
-  margin-bottom: 0;
-  color: white;
-}
-main .projet p {
-  color: white;
-  font-size: 0.6em;
+  transition: left 0.95s ease, right 1s ease, transform 0.3s ease;
 }
 main .projet a {
   background-color: transparent;
-  color: transparent;
-  border-radius: 40px;
   width: 100%;
   height: 100%;
-  position: absolute;
+}
+main .projet img {
+  width: 49%;
   pointer-events: all;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+main .projet img:hover {
+  transform: scale(1.05);
+}
+main .projet:hover {
+  transform: scale(1.05);
 }
 main .icontainer {
   height: 50vw;
@@ -191,7 +186,27 @@ main .icontainer .resp-iframe {
   opacity: 1;
 }
 
-@media screen and (min-width: 1400px) {
+footer {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
+  background-color: #D32E4C;
+  color: whitesmoke;
+  flex-flow: wrap column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 7%;
+}
+footer div {
+  margin: 2%;
+}
+footer a {
+  margin: 2%;
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 1280px) {
   header #burger, header #burger2 {
     display: none;
   }
@@ -224,22 +239,25 @@ main .icontainer .resp-iframe {
     aspect-ratio: 16/9;
     opacity: 1;
   }
-  main .projet a {
-    text-decoration: none;
-    text-align: center;
-    padding: 1vh 3vw 1vh 4vw;
-    background-color: white;
-    color: black;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: auto;
-    font-family: "Poppins", sans-serif;
+  main .projet {
+    width: 50vw;
+    height: 60vh;
     border-radius: 20px;
-    position: relative;
   }
-  main .projet a lord-icon {
-    display: block;
-    position: absolute;
-    transform: translateX(-30px);
+  footer {
+    flex-flow: wrap row;
+    justify-content: center;
+    padding-bottom: 0%;
+    font-size: 1.5rem;
+  }
+  footer h3 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  footer #mentions {
+    width: 49%;
+  }
+  footer #copyright {
+    width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */

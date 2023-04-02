@@ -1,6 +1,6 @@
 @import url("../main.css");
 body {
-  min-height: 100vh;
+  height: auto;
 }
 
 main * {
@@ -40,17 +40,23 @@ main .banner nav button {
 main .banner nav #audiov {
   margin: 6% 0;
 }
+main .b0 {
+  background-color: #D32E4C;
+}
+main .b0 nav button {
+  color: #D32E4C;
+}
 main .b1 {
-  background-color: #312ed3;
-}
-main .b1 nav button {
-  color: #625fff;
-}
-main .b2 {
   background-color: #852abc;
 }
-main .b2 nav button {
+main .b1 nav button {
   color: #b362e3;
+}
+main .b2 {
+  background-color: #312ed3;
+}
+main .b2 nav button {
+  color: #625fff;
 }
 main .b3 {
   background-color: #ff9900;
@@ -66,23 +72,35 @@ main .partie {
   min-width: 100vw;
   max-width: 100vw;
 }
-main .partie #p1 {
+main .partie #p1, main .partie #p4 {
   background-image: url("../../images/png/p1.png");
 }
-main .partie #p2 {
+main .partie #p2, main .partie #p5 {
   background-image: url("../../images/png/p2.png");
 }
-main .partie #p3 {
+main .partie #p3, main .partie #p6 {
   background-image: url("../../images/png/p3.png");
   background-size: cover;
   background-position-x: center;
   background-position-y: bottom;
 }
+main .partie2 {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+main .projet {
+  margin: 5% 0;
+}
+main .partie0 h2 {
+  color: #D32E4C;
+}
 main .partie1 h2 {
-  color: #232197;
+  color: #852abc;
 }
 main .partie2 h2 {
-  color: #852abc;
+  color: #232197;
 }
 main .partie3 h2 {
   color: #e98c00;
@@ -90,31 +108,37 @@ main .partie3 h2 {
 main .droite {
   position: absolute;
   left: 110vw;
+  display: none;
 }
 main .gauche {
   position: absolute;
   left: -110vw;
+  display: none;
 }
 main .centre {
-  position: absolute;
+  position: relative;
   left: 0%;
 }
-main .partie2 .real, main .partie3 .real {
+main .partie1 .real, main .partie3 .real, main .partie0 .real {
   display: flex;
   flex-flow: wrap column;
   align-items: center;
   justify-content: center;
 }
-main .partie2 .real img, main .partie3 .real img {
+main .partie1 .real img, main .partie3 .real img, main .partie0 .real img {
   min-width: 50vw;
   max-width: 50vw;
   margin-top: 3vh;
 }
-main .partie2 .real #last, main .partie3 .real #last {
+main .partie1 .real #last, main .partie3 .real #last, main .partie0 .real #last {
   margin-bottom: 3vh;
 }
 
-@media screen and (min-width: 1300px) {
+footer {
+  margin-top: 7%;
+}
+
+@media screen and (min-width: 1280px) {
   main .banner h1 {
     font-size: 96px;
     padding: 15vh 0 6vh 0;
@@ -147,7 +171,7 @@ main .partie2 .real #last, main .partie3 .real #last {
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    margin: 6vh 0 10vh 0;
+    margin: 6vh 2vw 10vh 2vw;
   }
   main .real .projet {
     justify-content: start;
@@ -160,11 +184,7 @@ main .partie2 .real #last, main .partie3 .real #last {
     transform: scale(1) translateY(0vh);
     transition: transform 0.3s ease;
     padding: 3%;
-  }
-  main .real .projet * {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    border-radius: 15px;
   }
   main .real .projet h3 {
     text-align: left;
@@ -178,44 +198,24 @@ main .partie2 .real #last, main .partie3 .real #last {
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
   }
-  main .real .projet::before {
-    z-index: 1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.707);
-    border-radius: 40px;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
   main .real .projet:hover {
     transform: scale(1.05);
   }
-  main .real .projet:hover * {
-    opacity: 1;
-    pointer-events: all;
-    z-index: 2;
-  }
-  main .real .projet:hover::before {
-    opacity: 1;
-  }
-  main .partie2 .real, main .partie3 .real {
+  main .partie1 .real, main .partie3 .real, main .partie0 .real {
     flex-flow: wrap row;
     gap: 3vw;
   }
-  main .partie2 .real img, main .partie3 .real img {
+  main .partie1 .real img, main .partie3 .real img, main .partie0 .real img {
     min-width: 25vw;
     max-width: 25vw;
     margin-top: 3vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: transform 0.3s ease;
   }
-  main .partie2 .real img:hover, main .partie3 .real img:hover {
+  main .partie1 .real img:hover, main .partie3 .real img:hover, main .partie0 .real img:hover {
     transform: scale(1.05);
   }
-  main .partie2 .real #last, main .partie3 .real #last {
+  main .partie1 .real #last, main .partie3 .real #last, main .partie0 .real #last {
     margin-bottom: 3vh;
   }
 }/*# sourceMappingURL=realisations.css.map */

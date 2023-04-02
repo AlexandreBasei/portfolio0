@@ -2,17 +2,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     'use strict';
 
+    let tout = document.getElementById("tout");
     let dev = document.getElementById("dev");
     let graph = document.getElementById("graph");
     let audiov = document.getElementById("audiov");
-    let page = 1;
+    let page = 0;
     let nav = document.querySelectorAll("header nav a");
     let fond = document.getElementById("banner");
     let burger = document.getElementById('burger');
-    let projets = document.querySelectorAll(".projet");
 
     document.querySelector('body').addEventListener('scroll', function () {
-        if (window.innerWidth > 1400) {
+        if (window.innerWidth > 1280) {
 
             if (isOverlapping(nav[0], fond)) {
                 burger.children[0].style.backgroundColor = "white";
@@ -49,19 +49,79 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    dev.addEventListener("click", () => {
+    tout.addEventListener("click", () => {
 
         switch (page) {
+
+            case 1:
+                addClass('banner', 'b0');
+                rmClass('banner', 'b1');
+                rmClass('partie1', 'caché');
+                addClass('partie1', 'droite');
+                rmClass('partie1', 'centre');
+                addClass('partie0', 'centre');
+                rmClass('partie0', 'gauche');
+
+                page = 0;
+                break;
+
             case 2:
-                addClass('banner', 'b1');
+                addClass('banner', 'b0');
                 rmClass('banner', 'b2');
                 rmClass('partie2', 'caché');
                 addClass('partie2', 'droite');
                 rmClass('partie2', 'centre');
+                addClass('partie0', 'centre');
+                rmClass('partie0', 'gauche');
+
+                page = 0;
+                break;
+            case 3:
+                addClass('banner', 'b0');
+                rmClass('banner', 'b3');
+                addClass('partie3', 'droite');
+                rmClass('partie3', 'centre');
+                addClass('partie2', 'caché');
+                addClass('partie2', 'droite');
+                rmClass('partie2', 'gauche');
+                addClass('partie0', 'centre');
+                rmClass('partie0', 'gauche');
+
+                addClass('partie2', 'droite');
+
+                page = 0;
+            default:
+                break;
+        }
+    });
+
+    graph.addEventListener("click", () => {
+
+        switch (page) {
+            case 0:
+                addClass('banner', 'b1');
+                rmClass('banner', 'b0');
+                rmClass('partie0', 'caché');
+                addClass('partie0', 'gauche');
+                rmClass('partie0', 'centre');
+                addClass('partie1', 'centre');
+                rmClass('partie1', 'droite');
+                rmClass('partie1', 'gauche');
+                
+                page = 1;
+                console.log(page);
+                break;
+            case 2:
+                addClass('banner', 'b1');
+                rmClass('banner', 'b2');
+                addClass('partie2', 'droite');
+                rmClass('partie2', 'centre');
                 addClass('partie1', 'centre');
                 rmClass('partie1', 'gauche');
+                rmClass('partie1', 'droite');
 
                 page = 1;
+                console.log('ffff');
                 break;
             case 3:
                 addClass('banner', 'b1');
@@ -73,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 rmClass('partie2', 'gauche');
                 addClass('partie1', 'centre');
                 rmClass('partie1', 'gauche');
+                rmClass('partie1', 'droite');
 
                 addClass('partie2', 'droite');
 
@@ -82,9 +143,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    graph.addEventListener("click", () => {
+    dev.addEventListener("click", () => {
 
         switch (page) {
+            case 0:
+                addClass('banner', 'b2');
+                rmClass('banner', 'b0')
+                rmClass('partie2', 'caché');
+                addClass('partie2', 'centre');
+                rmClass('partie2', 'droite');
+                rmClass('partie2', 'gauche');
+                addClass('partie0', 'gauche');
+                rmClass('partie0', 'centre');
+                page = 2;
+                break;
             case 1:
                 addClass('banner', 'b2');
                 rmClass('banner', 'b1');
@@ -115,6 +187,18 @@ document.addEventListener('DOMContentLoaded', function () {
     audiov.addEventListener("click", () => {
 
         switch (page) {
+            case 0:
+                addClass('banner', 'b3');
+                rmClass('banner', 'b0');
+                addClass('partie0', 'gauche');
+                rmClass('partie0', 'centre');
+                addClass('partie3', 'centre');
+                rmClass('partie3', 'droite');
+                addClass('partie2', 'caché');
+                addClass('partie2', 'gauche');
+                rmClass('partie2', 'droite');
+                page = 3;
+                break;
             case 1:
                 addClass('banner', 'b3');
                 rmClass('banner', 'b1');
@@ -124,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 rmClass('partie3', 'droite');
                 addClass('partie2', 'caché');
                 addClass('partie2', 'gauche');
-                rmClass('partie2', 'droite')
+                rmClass('partie2', 'droite');
                 page = 3;
                 break;
             case 2:
@@ -139,4 +223,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
         }
     });
+
 });

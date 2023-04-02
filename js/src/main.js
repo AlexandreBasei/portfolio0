@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
 
-        if (window.innerWidth > 1400) {
+        if (window.innerWidth > 1280) {
 
             if (isOverlapping(nav[0], fond)) {
                 burger.children[0].style.backgroundColor = "white";
