@@ -3,6 +3,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
+
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
@@ -45,7 +46,6 @@ if (isset($_POST["msg"])) {
     } catch (Exception $e) {
         echo "<script>console.log('Email sent successfully.  Mailer Error: {$mail->ErrorInfo}');</script>";
     }
-
 }
 
 ?>
@@ -56,7 +56,7 @@ if (isset($_POST["msg"])) {
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/index.css">
     <link rel="icon" type="image/png" href="favicon.png" />
