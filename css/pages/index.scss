@@ -87,6 +87,31 @@ main {
             text-align: left;
             width: fit-content;
         }
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .cta {
+                margin: 0% 0 0 0;
+                border-radius: 10px;
+                padding: 3vh 3vw;
+                text-transform: uppercase;
+                background-color: $h3;
+                border: none;
+                color: rgba(255, 255, 255, 0.934);
+                font-size: 0.8em;
+                font-weight: 800;
+                text-decoration: none;
+                transition: transform 0.3s ease;
+            }
+    
+            .cta:hover{
+                transform: scale(1.05);
+            }
+        }
     }
 
     section {
@@ -441,6 +466,10 @@ main {
                 text-align: left;
                 width: fit-content;
                 margin-top: 0;
+            }
+
+            div .cta {
+                font-size: 1.2em;
             }
         }
     }

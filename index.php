@@ -121,6 +121,11 @@ if (isset($_POST["msg"])) {
                 détaillé de mes projets.
             </p>
             <h3 id="visite">Bonne visite !</h3>
+
+            <div>
+                <a class="cta" href="./images/pdf/CV_Alexandre_Basei.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+            </div>
+
         </article>
 
         <section>
