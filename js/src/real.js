@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let fond = document.getElementById("banner");
     let burger = document.getElementById('burger');
 
-    document.querySelector('body').addEventListener('scroll', function () {
+    window.addEventListener('scroll', function () {
+
         if (window.innerWidth > 1280) {
 
             if (isOverlapping(nav[0], fond)) {
@@ -33,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById("ico2").setAttribute("colors", "primary:#000000");
             }
         }
-        else {
+        else{
 
             if (isOverlapping(burger, fond)) {
                 burger.children[0].style.backgroundColor = "white";
                 burger.children[1].style.backgroundColor = "white";
                 burger.children[2].style.backgroundColor = "white";
-
+        
             } else {
                 burger.children[0].style.backgroundColor = "black";
                 burger.children[1].style.backgroundColor = "black";
