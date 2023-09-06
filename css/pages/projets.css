@@ -14,12 +14,12 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: wrap column;
-  height: 100vh;
 }
 main h1 {
   padding-top: 10%;
   font-size: 2rem;
   color: #D32E4C;
+  width: 100vw;
 }
 main a {
   background-image: url("../../images/png/p1.png");
@@ -37,8 +37,8 @@ main #images {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 main #imgVR {
-  width: 50vw;
-  height: 30vw;
+  width: 80vw;
+  height: 50vw;
   margin: 3%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -108,6 +108,11 @@ main #visite lord-icon {
     height: 25vw;
     margin: 2%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  main #imgVR {
+    width: 50vw;
+    height: 30vw;
+    margin: 3%;
   }
   main #bandeaux {
     width: 20vw;
